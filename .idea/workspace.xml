@@ -1,24 +1,12 @@
 <?xml version="1.0" encoding="UTF-8"?>
 <project version="4">
   <component name="ChangeListManager">
-    <list default="true" id="7b7fa8e3-1e6f-4496-bf4f-6f78f5d0ac30" name="Default" comment="added added device and created additional model fields.">
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/app/views/devise/shared/_links.erb" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/app/views/devise/mailer/confirmation_instructions.html.erb" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/app/views/devise/passwords/edit.html.erb" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/app/views/devise/registrations/edit.html.erb" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/app/views/devise/confirmations/new.html.erb" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/app/views/devise/passwords/new.html.erb" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/app/views/devise/registrations/new.html.erb" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/app/views/devise/sessions/new.html.erb" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/app/views/devise/unlocks/new.html.erb" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/app/views/devise/mailer/reset_password_instructions.html.erb" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/app/views/devise/mailer/unlock_instructions.html.erb" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/app/models/user.rb" afterPath="$PROJECT_DIR$/app/models/user.rb" />
+    <list default="true" id="7b7fa8e3-1e6f-4496-bf4f-6f78f5d0ac30" name="Default" comment="">
       <change type="MODIFICATION" beforePath="$PROJECT_DIR$/.idea/workspace.xml" afterPath="$PROJECT_DIR$/.idea/workspace.xml" />
     </list>
     <ignored path="treehouse.iws" />
     <ignored path=".idea/workspace.xml" />
-    <file path="/Dummy.txt" changelist="7b7fa8e3-1e6f-4496-bf4f-6f78f5d0ac30" time="1361028370769" ignored="false" />
+    <file path="/Dummy.txt" changelist="7b7fa8e3-1e6f-4496-bf4f-6f78f5d0ac30" time="1361029176919" ignored="false" />
     <file path="/index.html.erb" changelist="7b7fa8e3-1e6f-4496-bf4f-6f78f5d0ac30" time="1361022840211" ignored="false" />
     <file path="/application.html.erb" changelist="7b7fa8e3-1e6f-4496-bf4f-6f78f5d0ac30" time="1361020161615" ignored="false" />
     <file path="/application.css" changelist="7b7fa8e3-1e6f-4496-bf4f-6f78f5d0ac30" time="1361020078423" ignored="false" />
@@ -46,7 +34,17 @@
   </component>
   <component name="ExecutionTargetManager" SELECTED_TARGET="default_target" />
   <component name="FileEditorManager">
-    <leaf />
+    <leaf>
+      <file leaf-file-name=".gitignore" pinned="false" current="true" current-in-tab="true">
+        <entry file="file://$PROJECT_DIR$/.gitignore">
+          <provider selected="true" editor-type-id="text-editor">
+            <state line="17" column="20" selection-start="206" selection-end="206" vertical-scroll-proportion="0.49571183">
+              <folding />
+            </state>
+          </provider>
+        </entry>
+      </file>
+    </leaf>
   </component>
   <component name="FindManager">
     <FindUsagesManager>
@@ -74,7 +72,6 @@
         <option value="$PROJECT_DIR$/app/assets/javascripts/statuses.js.coffee" />
         <option value="$PROJECT_DIR$/app/assets/stylesheets/statuses.css.scss" />
         <option value="$PROJECT_DIR$/app/views/statuses/index.html.erb" />
-        <option value="$PROJECT_DIR$/.gitignore" />
         <option value="$PROJECT_DIR$/Gemfile" />
         <option value="$PROJECT_DIR$/config/environments/development.rb" />
         <option value="$PROJECT_DIR$/config/routes.rb" />
@@ -83,6 +80,7 @@
         <option value="$PROJECT_DIR$/app/views/layouts/application.html.erb" />
         <option value="$PROJECT_DIR$/app/views/devise/registrations/new.html.erb" />
         <option value="$PROJECT_DIR$/app/models/user.rb" />
+        <option value="$PROJECT_DIR$/.gitignore" />
       </list>
     </option>
   </component>
@@ -758,7 +756,15 @@
       <created>1361028361467</created>
       <updated>1361028361467</updated>
     </task>
-    <option name="localTasksCounter" value="3" />
+    <task id="LOCAL-00003" summary="created the device views in order to be able to modify them&#10;added the custom fields to the sign up page.">
+      <created>1361029122807</created>
+      <updated>1361029122807</updated>
+    </task>
+    <task id="LOCAL-00004" summary="readded the .idea folder, seems not too bad this ide, let's see wether this will be portable?">
+      <created>1361029178087</created>
+      <updated>1361029178087</updated>
+    </task>
+    <option name="localTasksCounter" value="5" />
     <servers />
   </component>
   <component name="ToolWindowManager">
@@ -823,7 +829,7 @@
     <option name="MAXIMUM_HISTORY_ROWS" value="1000" />
     <option name="FORCE_NON_EMPTY_COMMENT" value="false" />
     <option name="CLEAR_INITIAL_COMMIT_MESSAGE" value="false" />
-    <option name="LAST_COMMIT_MESSAGE" value="added added device and created additional model fields." />
+    <option name="LAST_COMMIT_MESSAGE" value="readded the .idea folder, seems not too bad this ide, let's see wether this will be portable?" />
     <option name="MAKE_NEW_CHANGELIST_ACTIVE" value="false" />
     <option name="OPTIMIZE_IMPORTS_BEFORE_PROJECT_COMMIT" value="false" />
     <option name="CHECK_FILES_UP_TO_DATE_BEFORE_COMMIT" value="false" />
@@ -838,6 +844,8 @@
     <option name="FILE_HISTORY_SPLITTER_PROPORTION" value="0.6" />
     <MESSAGE value="added the hover with jquery toggle" />
     <MESSAGE value="added added device and created additional model fields." />
+    <MESSAGE value="created the device views in order to be able to modify them&#10;added the custom fields to the sign up page." />
+    <MESSAGE value="readded the .idea folder, seems not too bad this ide, let's see wether this will be portable?" />
   </component>
   <component name="XDebuggerManager">
     <breakpoint-manager />
@@ -867,13 +875,6 @@
     <entry file="file://$PROJECT_DIR$/.idea/workspace.xml">
       <provider selected="true" editor-type-id="text-editor">
         <state line="0" column="0" selection-start="0" selection-end="0" vertical-scroll-proportion="0.0">
-          <folding />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/.gitignore">
-      <provider selected="true" editor-type-id="text-editor">
-        <state line="18" column="6" selection-start="213" selection-end="213" vertical-scroll-proportion="0.52487135">
           <folding />
         </state>
       </provider>
@@ -951,6 +952,13 @@
     <entry file="file://$PROJECT_DIR$/db/migrate/20130216151744_devise_create_users.rb">
       <provider selected="true" editor-type-id="text-editor">
         <state line="13" column="40" selection-start="447" selection-end="447" vertical-scroll-proportion="0.02915952">
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/.gitignore">
+      <provider selected="true" editor-type-id="text-editor">
+        <state line="17" column="20" selection-start="206" selection-end="206" vertical-scroll-proportion="0.49571183">
           <folding />
         </state>
       </provider>
