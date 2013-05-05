@@ -1,9 +1,17 @@
 # Read about fixtures at http://api.rubyonrails.org/classes/ActiveRecord/Fixtures.html
 
 one:
-  content: MyText
+  content: kjellskisText1
   user: kjellski
 
 two:
-  content: MyText
+  content: kjellskisText2
   user: kjellski
+
+three:
+  content: annasText1
+  user: anna
+
+four:
+  content: annasText2
+  user: anna

@@ -4,3 +4,9 @@ kjellski:
   last_name: "Otto"
   email: "o.k@gm.com"
   profile_name: "kjellski"
+
+anna:
+  first_name: "Anna"
+  last_name: "Stöwahse"
+  email: "a.s@gm.c"
+  profile_name: "anna"

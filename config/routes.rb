@@ -24,6 +24,9 @@ Treehouse::Application.routes.draw do
       to: 'statuses#index',
       as: 'feed'
 
+  get '/:id',
+      to: 'profiles#show'
+
   root :to => 'statuses#index'
 
   # The priority is based upon order of creation:
