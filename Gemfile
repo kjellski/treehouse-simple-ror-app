@@ -11,6 +11,7 @@ gem 'simple_form'
 
 group :test do
   gem 'minitest-reporters', '~> 0.5.0'
+  gem 'shoulda'
 end
 
 # Gems used only for assets and not required

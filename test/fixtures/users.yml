@@ -10,3 +10,9 @@ anna:
   last_name: "Stöwahse"
   email: "a.s@gm.c"
   profile_name: "anna"
+
+fred:
+  first_name: "Fred"
+  last_name: "Stöwahse"
+  email: "frederick.stoewahse@gmail.com"
+  profile_name: "waith"
