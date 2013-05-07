@@ -2,17 +2,20 @@
 kjellski:
   first_name: "Kjell"
   last_name: "Otto"
-  email: "otto.kjell@gmail.com"
+  email: "o.k@gm.com"
   profile_name: "kjellski"
+  encrypted_password: "$2a$10$Fh/Hm8RxDsuPTeBUr6864.GARlcmt7zF2WspaXGr3BIv2C27N.osq"
 
 anna:
   first_name: "Anna"
-  last_name: "Stöwahse"
+  last_name: "Stoe"
   email: "a.s@gm.c"
   profile_name: "anna"
+  encrypted_password: "$2a$10$Fh/Hm8RxDsuPTeBUr6864.GARlcmt7zF2WspaXGr3BIv2C27N.osq"
 
 fred:
   first_name: "Fred"
-  last_name: "Stöwahse"
-  email: "frederick.stoewahse@gmail.com"
-  profile_name: "waith"
+  last_name: "Stoe"
+  email: "f.s@gm.com"
+  profile_name: "fred"
+  encrypted_password: "$2a$10$Fh/Hm8RxDsuPTeBUr6864.GARlcmt7zF2WspaXGr3BIv2C27N.osq"
