@@ -8,6 +8,7 @@ gem 'rails', '3.2.11'
 gem 'sqlite3'
 gem 'devise'
 gem 'simple_form'
+gem 'state_machine'
 
 group :test do
   gem 'minitest-reporters', '~> 0.5.0'
