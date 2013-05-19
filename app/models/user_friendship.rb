@@ -5,13 +5,20 @@ class UserFriendship < ActiveRecord::Base
   attr_accessible :user, :friend, :user_id, :friend_id, :state
 
   state_machine :state, initial: :pending do
-    after_transition on: :accept, do: :send_acceptance_email
+    after_transition on: :accept,
+                     do: [:send_acceptance_email,
+                          :accept_mutual_friendship!]
 
     state :requested
 
     event :accept do
       transition any => :accepted
     end
+  end
+
+  def mutual_friendship
+    # get the friendship that is the connection between user and friend
+    self.class.where({ user_id: friend_id, friend_id: user_id}).first
   end
 
   def self.request(user1, user2)
@@ -22,7 +29,6 @@ class UserFriendship < ActiveRecord::Base
       friendship1.send_request_email
       friendship1
     end
-
   end
 
   def send_request_email
@@ -31,5 +37,11 @@ class UserFriendship < ActiveRecord::Base
 
   def send_acceptance_email
     UserNotifier.friend_request_accepted(id).deliver
+  end
+
+  def accept_mutual_friendship!
+    # update the state without using the state machine because that
+    # would start this over and get us into an infinite loop of callbacks
+    mutual_friendship.update_attribute(:state, 'accepted')
   end
 end

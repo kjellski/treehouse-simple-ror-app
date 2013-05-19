@@ -10,6 +10,8 @@
   <%= @status.content %>
 </p>
 
+<% if @status.user == current_user %>
+  <%= link_to "Edit", edit_status_path(@status) %> |
+<% end %>
 
-<%= link_to 'Edit', edit_status_path(@status) %> |
 <%= link_to 'Back', statuses_path %>
