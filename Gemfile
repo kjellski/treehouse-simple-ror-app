@@ -9,6 +9,8 @@ gem 'sqlite3'
 gem 'devise'
 gem 'simple_form'
 gem 'state_machine'
+gem 'draper'
+gem 'js-routes'
 
 group :test do
   gem 'minitest-reporters', '~> 0.5.0'
