@@ -1,4 +1,4 @@
-require 'test_helper'
+require File.join(File.dirname(__FILE__), '..', 'test_helper.rb')
 
 class AddAFriendTest < ActionDispatch::IntegrationTest
   def sign_in_as(user, password)

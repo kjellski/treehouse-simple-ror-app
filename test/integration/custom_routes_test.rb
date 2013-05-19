@@ -1,4 +1,4 @@
-require 'test_helper'
+require File.join(File.dirname(__FILE__), '..', 'test_helper.rb')
 
 class CustomRoutesTest < ActionDispatch::IntegrationTest
   test "that /login route opens the login page" do
