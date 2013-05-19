@@ -214,7 +214,9 @@ class UserFriendshipsControllerTest < ActionController::TestCase
 
     context "when logged in" do
       setup do
-        @user_friendship = UserFriendship.request(users(:kjellski), users(:fred))
+        @friend = create(:user)
+        @user_friendship = create(:pending_user_friendship, friend: @friend, user: users(:kjellski))
+        create(:pending_user_friendship, friend: users(:kjellski), user: @friend)
         sign_in users(:kjellski)
         put :accept, id: @user_friendship
         @user_friendship.reload
@@ -231,6 +233,37 @@ class UserFriendshipsControllerTest < ActionController::TestCase
 
       should "have a flash message success" do
         assert_equal "You are now friends with #{@user_friendship.friend.first_name}.", flash[:success]
+      end
+    end
+  end
+
+  context "#destroy" do
+    context "when not logged in" do
+      should "redirect to login when not logged in" do
+        delete :destroy, id: 1
+        assert_response :redirect
+        assert_redirected_to login_path
+      end
+    end
+
+    context "when logged in" do
+      setup do
+        @friend = create(:user)
+        @user_friendship = create(:accepted_user_friendship, friend: @friend, user: users(:kjellski))
+        create(:accepted_user_friendship, friend: users(:kjellski), user: @friend)
+
+        sign_in users(:kjellski)
+      end
+
+      should "delete user friendship" do
+        assert_difference 'UserFriendship.count', -2 do
+          delete :destroy, id: @user_friendship
+        end
+      end
+
+      should "set the flash message" do
+        delete :destroy, id: @user_friendship
+        assert_equal "Friendship destroyed.", flash[:success]
       end
     end
   end

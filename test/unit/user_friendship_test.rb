@@ -107,4 +107,32 @@ class UserFriendshipTest < ActiveSupport::TestCase
       end
     end
   end
+
+  context "#delete_mutual_friendship!" do
+    setup do
+      UserFriendship.request users(:kjellski), users(:fred)
+      @friendship1 = users(:kjellski).user_friendships.where(friend_id: users(:fred).id).first
+      @friendship2 = users(:fred).user_friendships.where(friend_id: users(:kjellski).id).first
+    end
+
+    should "delete mutual friendship" do
+      assert_equal @friendship1, @friendship2.mutual_friendship
+      @friendship1.delete_mutual_friendship!
+      assert !UserFriendship.exists?(@friendship2)
+    end
+  end
+
+  context "#destroy" do
+    setup do
+      UserFriendship.request users(:kjellski), users(:fred)
+      @friendship1 = users(:kjellski).user_friendships.where(friend_id: users(:fred).id).first
+      @friendship2 = users(:fred).user_friendships.where(friend_id: users(:kjellski).id).first
+    end
+
+    should "delete mutual friendship" do
+      @friendship1.destroy
+      assert !UserFriendship.exists?(@friendship2)
+    end
+  end
 end
+
