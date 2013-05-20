@@ -12,6 +12,11 @@ gem 'state_machine'
 gem 'draper', '~> 1.0'
 gem 'js-routes'
 
+group :development do
+  gem 'better_errors'
+  gem 'binding_of_caller'
+end
+
 group :test do
   gem 'minitest-reporters', '~> 0.5.0'
   gem 'factory_girl_rails'

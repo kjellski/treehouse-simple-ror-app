@@ -29,7 +29,7 @@
                     edit_user_friendship_path(friendship.friend.profile_name) %>
       <% end %>
       <% if friendship.accepted? %>
-        <em>Friendship started at <%= friendship.updated_at %>.</em> <%= link_to "Update friendship", edit_user_friendship_path(friendship) %>
+        <em>Friendship started at <%= friendship.updated_at %>.</em> <%= link_to "Update friendship", edit_user_friendship_path(friendship.friend.profile_name) %>
       <% end %>
     </div>
   </div>

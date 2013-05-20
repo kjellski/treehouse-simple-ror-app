@@ -71,4 +71,14 @@ class UserTest < ActiveSupport::TestCase
   test "that calling to_param on a user returns the profile name" do
     assert_equal "kjellski", users(:kjellski).to_param
   end
+
+  context "#has_blocked?" do
+    should "return true if a user has blocked another user" do
+      assert users(:kjellski).has_blocked?(users(:blocked_friend))
+    end
+
+    should "return false if a user has not blocked another user" do
+      assert !users(:kjellski).has_blocked?(users(:fred))
+    end
+  end
 end
