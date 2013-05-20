@@ -19,3 +19,9 @@ fred:
   email: "f.s@gm.com"
   profile_name: "fred"
   encrypted_password: "$2a$10$Fh/Hm8RxDsuPTeBUr6864.GARlcmt7zF2WspaXGr3BIv2C27N.osq"
+
+blocked_friend:
+  first_name: 'Blocked'
+  last_name: 'Friend'
+  email: 'blocked@mail.com'
+  profile_name: 'youblockedme'

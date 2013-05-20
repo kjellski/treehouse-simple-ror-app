@@ -23,8 +23,14 @@
                  method: :put do %>
       <%= submit_tag "Accept Friendship", class: 'btn btn-primary' %>
     <% end %>
-
   <% end %>
+
+  <%= form_for @user_friendship,
+               url: block_user_friendship_path(@user_friendship),
+               method: :put do %>
+    <%= submit_tag "Block Friendship", class: 'btn' %>
+  <% end %>
+
 
   <%= form_for @user_friendship,
                url: accept_user_friendship_path(@user_friendship),

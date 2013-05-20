@@ -1,5 +1,4 @@
 class UserFriendshipDecorator < Draper::Decorator
-
   decorates :user_friendship
   delegate_all
 

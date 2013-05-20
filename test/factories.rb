@@ -13,6 +13,10 @@ FactoryGirl.define do
     association :user, factory: :user
     association :friend, factory: :user
 
+    factory :blocked_user_friendship do
+      state 'blocked'
+    end
+
     factory :pending_user_friendship do
       state 'pending'
     end
