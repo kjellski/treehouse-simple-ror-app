@@ -41,13 +41,13 @@ class UserFriendshipsControllerTest < ActionController::TestCase
 
       should "display pending information on a pending friendship" do
         assert_select "#user_friendship_#{@friendship1.id}" do
-          assert_select "em", "Friendship is pending."
+          assert_select "em", "Friendship is pending"
         end
       end
 
       should "display date information on a accepted friendship" do
         assert_select "#user_friendship_#{@friendship2.id}" do
-          assert_select "em", "Friendship started at #{@friendship2.updated_at}."
+          assert_select "em", "Friendship is accepted"
         end
       end
 

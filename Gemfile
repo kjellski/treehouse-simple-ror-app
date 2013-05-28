@@ -1,6 +1,6 @@
 source 'https://rubygems.org'
 
-gem 'rails', '3.2.11'
+gem 'rails', '3.2.12'
 
 # Bundle edge Rails instead:
 # gem 'rails', :git => 'git://github.com/rails/rails.git'
@@ -13,6 +13,7 @@ gem 'draper', '~> 1.0'
 gem 'js-routes'
 
 group :development do
+  gem 'thin'
   gem 'better_errors'
   gem 'binding_of_caller'
 end
@@ -21,6 +22,10 @@ group :test do
   gem 'minitest-reporters', '~> 0.5.0'
   gem 'factory_girl_rails'
   gem 'shoulda'
+end
+
+group :development, :test do
+  gem 'log_buddy'
 end
 
 # Gems used only for assets and not required
@@ -36,6 +41,7 @@ group :assets do
 end
 
 gem 'jquery-rails'
+gem 'paperclip'
 
 # To use ActiveModel has_secure_password
 # gem 'bcrypt-ruby', '~> 3.0.0'
