@@ -11,6 +11,7 @@
       <div class="media-body">
         <h4 class="media-heading"><%= status.user.full_name %></h4>
         <p><%= status.content %></p>
+        <%= status_document_link(status) %>
         <div class="meta">
           <%= link_to time_ago_in_words(status.created_at) + " ago", status %>
           <% if signed_in? && current_user == status.user %>
